@@ -3,7 +3,7 @@
 // @namespace      http://blog.gslin.org/plugins/cpan-syntaxhighlight
 // @include        http://search.cpan.org/dist/*
 // @include        http://search.cpan.org/~*/*
-// @version        2011.0310.2
+// @version        2011.0320.1
 // ==/UserScript==
 
 (function(d){
@@ -55,6 +55,6 @@
 
     s = d.createElement('script');
     s.type = 'text/javascript';
-    s.innerHTML = 'SyntaxHighlighter.all();';
+    s.textContent = '(SyntaxHighlighter.all())();';
     h.appendChild(s);
 })(document);
